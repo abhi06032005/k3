@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Defense - Kavach</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+}
+
+        .intro {
+            text-align: center;
+            padding: 50px;
+        }
+        .intro img {
+            width: 20%;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+        .intro h1 {
+            color: #2a4d8f;
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-top: 20px;
+        }
+        .intro p {
+            font-size: 18px;
+            color: #555;
+            max-width: 700px;
+            margin: auto;
+        }
+        .insta-link {
+            margin-top: 15px;
+            font-size: 18px;
+        }
+        .insta-link a {
+            text-decoration: none;
+            color: #e1306c;
+            font-weight: bold;
+        }
+        .video-section {
+            text-align: center;
+            padding: 40px;
+        }
+        .videos {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .videos video {
+            width: 250px;
+            height: 450px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 768px) {
+            .videos video {
+                width: 90%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header class="topping">
+    <h2 >Self Defense</h2>
+</header>
+
+<section class="intro">
+    <img src="karate.jpg" alt="Karate Champion">
+    <h1>Meet the Champion</h1>
+        <p>Learn from one of the best! This champion has mastered self-defense tactics and inspires countless individuals accross <i>India</i>.</p>
+    <p class="insta-link">Follow on Instagram: <a href="https://instagram.com/fighter_profile" target="_blank">@fighter_profile</a></p>
+</section>
+
+<section class="video-section">
+    <h2>Watch & Learn</h2>
+    <div class="videos">
+        <video controls>
+            <source src="self-defense-video1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <video controls>
+            <source src="self-defense-video2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</section>
+
+</body>
+</html>
+

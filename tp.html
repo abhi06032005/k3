@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kavach - Women's Safety</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            font-size: 26px;
+            font-weight: 700;
+            color: #2a4d8f;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links li {
+            display: inline;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            font-size: 16px;
+        }
+        .download-btn {
+            background: #2a4d8f;
+            color: white;
+            border: none;
+            padding: 12px 18px;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 60px;
+        }
+        .hero-content {
+            max-width: 50%;
+        }
+        .hero-content h1 {
+            color: #2a4d8f;
+            font-size: 3em;
+            font-weight: 700;
+        }
+        .hero-content p {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.6;
+        }
+        .buttons button {
+            margin-right: 10px;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .primary-btn {
+            background: #2a4d8f;
+            color: white;
+        }
+        .secondary-btn {
+            background: transparent;
+            border: 2px solid #2a4d8f;
+            color: #2a4d8f;
+        }
+        .hero-image img {
+            width: 350px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+        .floating-card {
+            background: white;
+            padding: 12px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            transform: translate(-50%, -50%);
+            font-size: 14px;
+            font-weight: 600;
+        }
+        .cab {
+            top: 15%;
+            left: 70%;
+        }
+        .sos {
+            bottom: 10%;
+            left: 75%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">K Kavach</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Self Defense</a></li>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <button class="download-btn">Download App</button>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <span class="tagline">Safe. Secure. Empowered.</span>
+            <h1>Protecting women's safety <br> <span>is our priority</span></h1>
+            <p>Kavach provides instant safety tools, emergency assistance, and empowerment resources to help women feel secure anywhere, anytime.</p>
+            <div class="buttons">
+                <button class="primary-btn">Get Started</button>
+                <button class="secondary-btn">Learn More</button>
+            </div>
+            <div class="stats">10,000+ women already feeling safer</div>
+        </div>
+        <div class="hero-image">
+            <img src="woman.png" alt="Empowered woman">
+            <div class="floating-card cab">Safe Cab Booking <br> Verified drivers and route tracking</div>
+            <div class="floating-card sos">Emergency Alert <br> Instantly notify trusted contacts</div>
+        </div>
+    </section>
+</body>
+</html>
