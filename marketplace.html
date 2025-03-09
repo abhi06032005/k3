@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace - Self Defense Products</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            text-align: center;
+        }
+
+        h2 {
+            color: #2a4d8f;
+        }
+
+        #searchBar {
+            width: 90%;
+            padding: 10px;
+            margin: 15px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .product {
+            background: #e8f1ff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .product img {
+            width: 100px;
+            height: 100px;
+            border-radius: 5px;
+        }
+        .product button{
+            background-color: #2a4d8f;
+            color: white;
+        }
+      
+        h3 {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: bold;
+            color: hsl(219, 53%, 26%);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Self-Defense Marketplace</h2>
+
+        <!-- Search Bar -->
+        <input type="text" id="searchBar" placeholder="Search for products..." disabled>
+
+        <div class="products">
+            <!-- Product 1 -->
+            <div class="product">
+                <img src="spray.jpg" alt="Pepper Spray">
+                <h3>Pepper Spray</h3>
+                <p>Price: ₹299</p>
+                <button>Buy now</button>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product">
+                <img src="stun.jpg" alt="Stun Gun">
+                <h3>Stun Gun</h3>
+                <p>Price: ₹999</p>
+                <button>Buy now</button>
+            
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product">
+                <img src="safety-alarm.jpg" alt="Safety Alarm">
+                <h3>Personal Safety Alarm</h3>
+                <p>Price: ₹499</p>
+                <button>Buy now</button>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product">
+                <img src="self-defense-keychain.jpg" alt="Self-Defense Keychain">
+                <h3>Self-Defense Keychain</h3>
+                <p>Price: ₹399</p>
+                <button>Buy now</button>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product">
+                <img src="tactical-pen.jpg" alt="Tactical Pen">
+                <h3>Tactical Pen</h3>
+                <p>Price: ₹599</p>
+                <button>Buy now</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

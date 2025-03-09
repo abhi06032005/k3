@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Emergency Contact - Kavach</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+h2, h3 {
+    text-align: center;
+    color: #2a4d8f;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background: #2a4d8f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1e3c6d;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #e8f1ff;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <h2>Add Emergency Contact</h2>
+        
+        <form id="contactForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" placeholder="Enter full name" required>
+
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" placeholder="Enter phone number" required>
+
+            <label for="whatsapp">WhatsApp Number:</label>
+            <input type="tel" id="whatsapp" placeholder="Enter WhatsApp number" required>
+
+            <label for="liveLocation">
+                <input type="checkbox" id="liveLocation"> Enable Live Location Sharing
+            </label>
+
+            <button type="button" onclick="addContact()">Add Contact</button>
+        </form>
+
+        <h3>Saved Contacts:</h3>
+        <ul id="contactList"></ul>
+    </div>
+
+    <script>
+        function addContact() {
+            let name = document.getElementById("name").value;
+            let contact = document.getElementById("contact").value;
+            let whatsapp = document.getElementById("whatsapp").value;
+            let liveLocation = document.getElementById("liveLocation").checked ? "Enabled" : "Disabled";
+
+            if (name === "" || contact === "" || whatsapp === "") {
+                alert("Please fill in all fields.");
+                return;
+            }
+
+            let contactList = document.getElementById("contactList");
+            let listItem = document.createElement("li");
+            listItem.innerHTML = `<strong>${name}</strong> - ${contact} (WhatsApp: ${whatsapp}) - Location: ${liveLocation}`;
+            contactList.appendChild(listItem);
+
+            // Clear form fields after adding
+            document.getElementById("contactForm").reset();
+        }
+    </script>
+
+</body>
+</html>
